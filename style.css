@@ -128,6 +128,30 @@ abbr {
     font-style: italic;
 }
 
+.quote-rightside {
+    position: absolute;
+    width: 200px;
+    line-height: 25px;
+    overflow: visible;
+    right: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3rem;
+}
+
+.quote-leftside {
+    position: absolute;
+    width: 200px;
+    line-height: 25px;
+    overflow: visible;
+    left: 10vw;
+    
+    transform: translate(0%,100%);
+    color: white;
+    font-size: 3rem;
+}
+
 /* FLEXBOX SETUP */
 
 .row {
