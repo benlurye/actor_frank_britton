@@ -1,0 +1,162 @@
+* {
+    box-sizing:  border-box;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+#desktop_header {
+/*     padding-top: 10px; */
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 8rem;
+}
+
+#mobile_header {
+    display: none;
+}
+
+#desktop_nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+#desktop_nav a {
+    text-transform: lowercase;
+    margin-top: 5px;
+    text-align: right;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#desktop_nav a:hover {
+    color: #f8cba1;
+}
+
+
+
+.superlatives {
+    position: relative;
+    top: 0;
+    left: 8vw; /*oops fix this*/
+}
+
+.superlatives p {
+    font-size: 1.5rem;
+}
+
+.bio {
+    position: absolute;
+    width: 30%;
+    color: white;
+    font-size: 2rem;
+    right: 50%;
+    transform: translateX(50%);
+    top: 0;
+}
+
+abbr {
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.photo-container {
+    position: relative;
+    margin-top: 30px;
+}
+
+.photo-container .row {
+    justify-content: space-between;
+}
+
+.right-side-curved {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.left-side-curved {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.quote-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+.overlap-photo {
+/*     line-height: 0; */
+    width: max-content;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.57); 
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.57);
+    margin: 0 auto;
+}
+
+.overlap-photo img {
+    vertical-align: bottom;
+}
+
+.top-left {
+    transform: translateX(-30%);
+}
+
+.bottom-right {
+    width: 600px;
+    transform: translate(30%, -20%);
+}
+
+.photo_credit {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    color: white;
+    font-style: italic;
+}
+
+/* FLEXBOX SETUP */
+
+.row {
+    display: flex;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+footer {
+    line-height: 18.7px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+footer p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+footer a {
+    font-size: inherit;
+    text-underline-offset: 2px;
+}
+
+footer a:hover {
+    color: rgb(8,227,247);
+}
