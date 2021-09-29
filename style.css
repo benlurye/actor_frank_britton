@@ -180,6 +180,12 @@ abbr {
     font-style: italic;
 }
 
+.credit_bottom_right {
+	position: absolute;
+	bottom: -2rem;
+	right: 0;
+}
+
 .quote {
     width:350px;
     line-height: 25px;
