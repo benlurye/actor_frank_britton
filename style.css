@@ -39,6 +39,10 @@ a:visited {
     color: white;
 }
 
+#mobile_header {
+    display: none;
+}
+
 #desktop_header {
     color: white;
     z-index: 2;
@@ -52,8 +56,12 @@ a:visited {
 h1 {
 /*     font-family: 'Tangerine', cursive; */
     font-size: 6rem;
-    text-shadow: 2px 2px 2px black;
+    
     overflow: visible;
+}
+
+.has-shadow {
+    text-shadow: 2px 2px 2px black;
 }
 
 #mobile_header {
@@ -74,6 +82,10 @@ h1 {
     text-align: right;
     font-size: 1.5rem;
     text-decoration: none;
+}
+
+#calendar span {
+    font-size: inherit; 
 }
 
 .superlatives {
@@ -228,10 +240,13 @@ abbr {
 
 /* FLEXBOX SETUP */
 
-.row {
+.row,
+.always-row,
+.column {
     display: flex;
 }
 
+.col-3,
 .col-4,
 .col-6,
 .col-12 {
@@ -239,7 +254,12 @@ abbr {
     flex-shrink: 1;
 }
 
+.col-3 {
+	flex-basis: 25%;
+}
+
 .col-4 {
+    object-fit: contain;
     flex-basis: 33.3333333%;
 }
 
@@ -345,4 +365,47 @@ footer a {
 
 footer a:hover {
     text-shadow: 2px 2px 2px #000000;
+}
+
+@media only screen and (max-width: 500px) {
+
+    #desktop_header {
+    	display: none;
+    }
+
+    #mobile_header {
+    	display: block;
+    }
+
+    .photo-container {
+    	margin: unset;
+    }
+
+    .photo-container img {
+    	-webkit-box-shadow: unset;
+    	box-shadow: unset;
+    	max-width: 100vw;
+    }
+
+    .right-side-curved,
+    .left-side-curved {
+    	border-radius: unset;
+    }
+
+    .photo-container p {
+    	text-align: center;
+    }
+
+    .column {
+    	flex-direction: column;
+    }
+
+    .col-4 {
+    	padding-top: 20px;
+    }
+
+    .bio p {
+    	text-align: center;
+    	font-size:  1.5rem;
+    }
 }

@@ -22,7 +22,7 @@
     
    <nav id="desktop_nav">
      <div class="name">
-      <h1>Frank Britton</h1>
+      <h1 class="has-shadow">Frank Britton</h1>
       <div class="superlatives">
         <p>Helen Hayes Award-winning actor</p>
        </div>
@@ -37,11 +37,30 @@
   
   </header>
 
+  <header id="mobile_header">
+    
+    
+      <div class="name">
+       <h1 class="has-shadow">Frank Britton</h1>
+       <div class="superlatives">
+         <p>Helen Hayes Award-winning actor</p>
+        </div>
+      </div>
+     
+    <nav id="mobile_nav">
+      <a href="#about">About</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+     </nav>
+   
+   </header>
+
   <!-- BIO/ABOUT -->
 
   <div class="container">
 
-  <div class="photo-container row" id="about">
+  <div class="photo-container row column" id="about">
    
    <div class="col-4">
     <img src="images/lookingatcamera.JPG" class="right-side-curved">
@@ -67,7 +86,7 @@
   <!-- CALENDAR -->
 
   <div id="calendar">
-    <h2>Next on stage: announcing soon.</h2>
+    <h2><span class="has-shadow">Next on stage:</span> announcing soon.</h2>
   </div>
 
   <!-- GALLERY / QUOTES -->
@@ -143,7 +162,7 @@
    <!-- action="https://formspree.io/f/xyylwgne" -->
    <div id="contact">
     <form id="my-form" method="POST">
-      <h3>Contact Frank</h3>
+      <h3 class="has-shadow">Contact Frank</h3>
       <ul>
           <li>
               <input type="name" name="_name" class="form-text" placeholder="your name..." required>
